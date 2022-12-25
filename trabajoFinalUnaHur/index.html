@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Trabajo Boostrap</title>
+</head>
+<body>
+
+                                <!-- Tabla -->
+  <!-- ---------------------------------------------------------------------------- -->
+    
+    <script>
+      document.write('<h1 class="text-center text-white m-4 col-5">Horario Académico</h1>');
+    </script>
+
+    <div class="container">
+        <div class="row">
+            
+            <table class="table table-hover  table-striped table-bordered">
+                <thead class="text-white bg-primary">
+                    <tr>
+                        <th>Día</th>
+                        <th>Horario</th>
+                        <th>Materias</th>
+                        <th>Aula</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="p-2 mb-2 bg-dark text-white">Lunes</td>
+                        <td class="p-2 mb-2 bg-success text-white">08:00 a 10:00 hs.</td>
+                        <td class="p-2 mb-2 bg-secondary text-white">Matématica</td>
+                        <td class="p-2 mb-2 bg-warning text-white">5</td>
+                    </tr>
+                    <tr>
+                        <td class="p-2 mb-2 bg-dark text-white">Martes</td>
+                        <td class="p-2 mb-2 bg-success text-white">12:00 a 14:00 hs.</td>
+                        <td class="p-2 mb-2 bg-secondary text-white">Ciencia</td>
+                        <td class="p-2 mb-2 bg-warning text-white">4</td>
+                    </tr>
+                    <tr>
+                        <td class="p-2 mb-2 bg-dark text-white">Miércoles</td>
+                        <td class="p-2 mb-2 bg-success text-white">13:00 a 16:00 hs.</td>
+                        <td class="p-2 mb-2 bg-secondary text-white">Lengua</td> 
+                        <td class="p-2 mb-2 bg-warning text-white">10</td>
+                    </tr>
+                    <tr>
+                        <td class="p-2 mb-2 bg-dark text-white">Jueves</td>
+                        <td class="p-2 mb-2 bg-success text-white">18:00 a 20:00 hs.</td>
+                        <td class="p-2 mb-2 bg-secondary text-white">Programación</td>
+                        <td class="p-2 mb-2 bg-warning text-white">7</td>
+                    </tr>
+                    <tr>
+                        <td class="p-2 mb-2 bg-dark text-white">Viernes</td>
+                        <td class="p-2 mb-2 bg-success text-white">09:00 a 11:00 hs.</td>
+                        <td class="p-2 mb-2 bg-secondary text-white">Física</td>
+                        <td class="p-2 mb-2 bg-warning text-white">3</td>
+                    </tr>
+                    <tr>
+                        <td class="p-2 mb-2 bg-dark text-white">Sábado</td>
+                        <td class="p-2 mb-2 bg-success text-white">10:00 a 12:00 hs.</td>
+                        <td class="p-2 mb-2 bg-secondary text-white">Química</td>
+                        <td class="p-2 mb-2 bg-warning text-white">9</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+                                    <!-- FORMULARIO -->
+    <!-- ----------------------------------------------------------------------------- -->
+    
+
+    <script>
+      document.write('<h3 class="text-center text-white m-4 col-5">Formulario de inscripción a materias</h3>')
+    </script>
+
+    <div class="container pt-4">
+        <form action="#">
+            <div class="mb-3">
+                <label for="nombre" class="form-label text-white">Introduce tu nombre</label>
+                <input id="nombre" type="text" placeholder="Tu nombre" class="form-control" required>
+                
+            </div>
+            
+            <div class="mb-3">
+              <label for="nombre" class="form-label text-white">Introduce tu apellido</label> 
+                <input id="apellido" type="text" placeholder="Tu apellido" class="form-control" required>
+               
+                
+            </div>
+
+            <div class="mb-3">
+              <label for="formFile" class="form-label text-white">Subir imagen de DNI</label>
+              <input class="form-control" type="file" id="formFile" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label text-white">Dirección de correo electrónico</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Tu email" required >
+              <div id="emailHelp" class="form-text text-white">Nunca compartiremos su correo electrónico con nadie más.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label text-white">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Tu password" required>
+            
+            </div>
+            <div class="mb-3 form-check">
+                <div class="text-white">  SELECIONE MATERIAS A CURSAR</div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"><label class="form-check-label text-white" for="flexSwitchCheckDefault">Matématica</label>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"><label class="form-check-label text-white" for="flexSwitchCheckDefault">Ciencia</label>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"><label class="form-check-label text-white" for="flexSwitchCheckDefault">Lengua</label>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"><label class="form-check-label text-white" for="flexSwitchCheckDefault">Programación</label>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"><label class="form-check-label text-white" for="flexSwitchCheckDefault">Física</label>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"><label class="form-check-label text-white" for="flexSwitchCheckDefault">Química</label> 
+              </div>
+
+
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+    </div>
+
+
+
+
+    <script>
+      alert('Bienvenido al registro Académico de materias.'),
+      alert('Recuerda completar todos los datos del formulario. Exitos!.');
+    </script>
+
+        <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
